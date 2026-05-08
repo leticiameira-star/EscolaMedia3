@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Notas</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>;
+
+</head>
+<body>
+
+  <h1>Cadastro de Alunos</h1>
+  <form id="formAluno">
+
+    <input type="text" id="nome" placeholder="Nome do aluno" required>
+
+    <input type="number" id="nota1" placeholder="primeira Nota" required>
+    <input type="number" id="nota2" placeholder="segunda Nota" required>
+    <input type="number" id="nota3" placeholder="terceira Nota" required>
+
+    <button type="submit">Cadastrar</button>
+    <button type="submit">Editar</button>
+    <button type="submit">Remover</button>
+
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Aluno</th>
+        <th>primeira nota</th>
+        <th>segunda nota</th>
+        <th>terceira nota</th>
+        <th>Média</th>
+        <th>Situação</th>
+      </tr>
+    </thead>
+    <tbody id="tabelaAlunos"></tbody>
+  </table>
+
+  <canvas id="grafico"></canvas>
+  <script src="script.js"></script>
+ 
+</body>
+</html>
